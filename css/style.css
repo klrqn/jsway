@@ -1,0 +1,121 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+form {
+  margin: 15px;
+  font-variant: small-caps;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.white-text {
+  text-shadow: -2px 0px 2px #1a1919;
+  color: white;
+}
+
+.black-text {
+  color: black;
+}
+
+label {
+  margin: 15px;
+}
+
+#submit {
+  width: 200px;
+  height: 40px;
+  
+  margin: 30px 30%;
+  background-color: rgb(213, 209, 216)
+}
+
+#error {
+  color: red;
+  font-weight: 900;
+  background:rgb(213, 209, 216);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 3px solid red;
+  border-radius: 5px;
+  padding: 3px;
+  margin: auto;
+  width: 40%;
+  margin-top: 15px;
+  text-align: center;
+  border-radius: 1.5px;
+  display: none;
+}
+
+.displayToggle {
+  display: block !important;
+}
+
+/* GRID */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 12vmax);
+  grid-template-rows: repeat(8, 12vmax);
+  height: 100vh;
+
+}
+
+
+
+.grid > .playable, .grid > .empty {
+  border: 3px yellow solid;
+}
+
+.playable {
+  background-color: black;
+}
+
+.empty {
+  background-color: red;
+}
+
+.background {
+  background: url("../img/colorful-fireworks.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
